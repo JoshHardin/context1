@@ -1,5 +1,7 @@
 function allTheArgs(func, ...args) {
-  // Your code here 
+  let callFunc = func.bind(null, ...args);
+
+  return callFunc;
 }
 
 /*****************************************************************************/
